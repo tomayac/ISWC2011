@@ -38,23 +38,15 @@
 
 \author{Thomas Steiner%
 \thanks{Thomas Steiner is partly funded by the European Commission under Grant No. 248296 for the FP7 I-SEARCH project.}}
-%
+
 \authorrunning{Enriching Unstructured Media Content}
 % (feature abused for this document to repeat the title also on left hand pages)
 
-% the affiliations are given next; don't give your e-mail address
-% unless you accept that it will be published
 \institute{Universitat Politècnica de Catalunya\\
 Department LSI\\
 08034 Barcelona, Spain\\
 \url{tsteiner@lsi.upc.edu}\\--\\ Supervised by:\\ Joaquim Gabarr\'{o} Vall\'{e}s (UPC)\\Michael Hausenblas (DERI)}
 
-%
-% NB: a more complex sample for affiliations and the mapping to the
-% corresponding authors can be found in the file "llncs.dem"
-% (search for the string "\mainmatter" where a contribution starts).
-% "llncs.dem" accompanies the document class "llncs.cls".
-%
 \maketitle
 \begin{abstract}
 Mobile devices like smartphones together with social networks enable people to generate, share, and consume enormous amounts of media content. Common search operations, for example searching for a music clip based on artist name and song title on video platforms such as YouTube, can be achieved both based on potentially shallow human-generated metadata, or based on more profound content analysis, driven by Optical Character Recognition (OCR) or Automatic Speech Recognition (ASR). However, more advanced use cases, such as summaries or compilations of several pieces of media content covering a certain event, are hard, if not impossible to fulfill at large scale. One example of such event can be a keynote speech held at a conference, where, given a stable network connection, media content is published on social networks while the event is still going on.
@@ -158,9 +150,9 @@ This task has not started yet. It will consist of development efforts in order t
 This task has not started yet. In a first step, the task consists of application development using JavaScript, HTML5, and CSS in order to generate media content compilations. We will make heavy use of the HTML5 media elements interface~\cite{mediaelements} for the \texttt{video} and \texttt{audio} elements as defined in the HTML5 specification. In a second step, an evaluation framework has to be developed in order to objectively judge the generated results. We will also investigate in how far existing third party manually generated summaries can be used as a gold standard.
  
 \section{Conclusion}
-In this document, we have examined the state of the art in multimedia semantics and have given an overview of MPEG-7. In continuation we have introduced the required steps for our approach and have evaluated our work so far, considering the tasks \emph{Event-Selection}, \emph{Micropost-Annotation}, \emph{Media-Content-Annotation}, \emph{Media-Content-Ranking}, and \emph{Media-Content-Compilation}. We then have provided an outlook on future work for each task.
+We have had a look at related work from the fields of enriching unstructured media content, event illustration, and video summarization. In continuation we have introduced the required steps for our proposed approach and have evaluated our work so far, considering the tasks \emph{Event-Selection}, \emph{Micropost-Annotation}, \emph{Media-Content-Annotation}, \emph{Media-Content-Ranking}, and \emph{Media-Content-Compilation}. Finally, we have provided an outlook on future work for each task.
 
-Keeping in mind our objective for this thesis, we feel that we are on the right track. We have the basic bricks in place, both for media content annotation, and for social network communication enrichment. Now we need to put the two pieces together in order to get a working product.
+Keeping in mind our objective for this thesis, we have the basic bricks in place, both for media content annotation, and for social network communication enrichment. Now we need to put the two pieces together in order to get a working product. The main research question is \textit{``how can semantically annotated media content linked to from semantically annotated microposts be ranked, key moments of interest be detected, and media content fragments be compiled in order to get a compelling summary?"}. We are envisioning both a stand-alone Web application where a user can select an event and get a custom-made video summary, but also Web browser extensions for existing media content sharing platforms where users can start off with one piece of media content and see its broader context.
 
 \bibliographystyle{abbrv}
 \bibliography{iswc2011}
